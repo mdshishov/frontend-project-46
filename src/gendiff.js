@@ -1,4 +1,4 @@
-import parseFile from './parser.js'
+import parseFile from './parsers.js'
 
 const genDiff = (filepath1, filepath2) => {
   const data1 = parseFile(filepath1)
