@@ -1,6 +1,6 @@
-import fs from 'fs'
-import url from 'url'
-import path from 'path'
+import fs from 'node:fs'
+import url from 'node:url'
+import path from 'node:path'
 import { describe, expect, test } from '@jest/globals'
 import genDiff from '../src/gendiff.js'
 

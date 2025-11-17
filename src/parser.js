@@ -1,8 +1,8 @@
-import path from 'path'
-import fs from 'fs'
-import process from 'process'
+import path from 'node:path'
+import fs from 'node:fs'
+import process from 'node:process'
 
-export default (filepath) => {
+const parseFile = (filepath) => {
   const currDirPath = process.cwd()
   const absolutePath = path.resolve(currDirPath, filepath)
 
@@ -10,3 +10,5 @@ export default (filepath) => {
   const data = JSON.parse(content)
   return data
 }
+
+export default parseFile

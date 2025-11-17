@@ -1,6 +1,6 @@
 import parseFile from './parser.js'
 
-export default (filepath1, filepath2) => {
+const genDiff = (filepath1, filepath2) => {
   const data1 = parseFile(filepath1)
   const data2 = parseFile(filepath2)
 
@@ -34,3 +34,5 @@ export default (filepath1, filepath2) => {
 
   return `{\n${diffArr.join('\n')}\n}`
 }
+
+export default genDiff
