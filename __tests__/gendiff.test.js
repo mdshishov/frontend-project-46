@@ -10,18 +10,20 @@ const __dirname = path.dirname(__filename)
 const getFixturePath = filename => path.join(__dirname, '..', '__fixtures__', filename)
 const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
-describe ('flat files comparison', () => {
-  const expected = readFile('expected-flat.txt')
+describe.each(['flat','nested'])(
+  '%s files comparison',
+  (dirName) => {
+    const expected = readFile(`${dirName}/expected.txt`)
 
-  test.each([
-    'json',
-    'yml',
-    'yaml',
-  ])('$extension', (extension) => {
-    const fixturePath1 = getFixturePath(`file1.${extension}`)
-    const fixturePath2 = getFixturePath(`file2.${extension}`)
+    test.each([
+      'json',
+      'yml',
+      'yaml',
+    ])('%s', (extension) => {
+      const fixturePath1 = getFixturePath(`${dirName}/file1.${extension}`)
+      const fixturePath2 = getFixturePath(`${dirName}/file2.${extension}`)
 
-    const result = genDiff(fixturePath1, fixturePath2)
-    expect(result).toBe(expected)
+      const result = genDiff(fixturePath1, fixturePath2)
+      expect(result).toBe(expected)
+    })
   })
-})
