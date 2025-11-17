@@ -6,7 +6,8 @@ const genDiff = (filepath1, filepath2) => {
 
   const keys1 = Object.keys(data1)
   const keys2 = Object.keys(data2)
-  const allKeys = [...new Set([...keys1, ...keys2])].sort()
+  const allKeys = [...new Set([...keys1, ...keys2])]
+    .sort((a, b) => a.localeCompare(b))
 
   const diffArr = []
   for (const key of allKeys) {
