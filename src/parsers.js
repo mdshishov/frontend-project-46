@@ -13,7 +13,7 @@ const parseFile = (filepath) => {
   const currDirPath = process.cwd()
   const absolutePath = path.resolve(currDirPath, filepath)
 
-  const extension = absolutePath.split('.').at(-1).toLowerCase()
+  const extension = path.extname(filepath).slice(1)
   const parser = parsers[extension]
 
   const content = fs.readFileSync(absolutePath, 'utf-8')
