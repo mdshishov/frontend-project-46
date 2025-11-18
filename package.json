@@ -21,7 +21,8 @@
   "homepage": "https://github.com/mdshishov/frontend-project-46#readme",
   "dependencies": {
     "commander": "^14.0.2",
-    "js-yaml": "^4.1.1"
+    "js-yaml": "^4.1.1",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@eslint/create-config": "^1.11.0",

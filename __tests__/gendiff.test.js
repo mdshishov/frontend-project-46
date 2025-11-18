@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename)
 const getFixturePath = filename => path.join(__dirname, '..', '__fixtures__', filename)
 const readFile = filename => fs.readFileSync(getFixturePath(filename), 'utf-8')
 
-describe.each(['flat','nested'])(
+describe.each(['flat', 'nested'])(
   '%s files comparison',
   (dirName) => {
     const expected = readFile(`${dirName}/expected.txt`)
