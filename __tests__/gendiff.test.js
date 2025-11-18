@@ -29,7 +29,7 @@ describe.each(['flat', 'nested'])(
   })
 
 describe ('output formatting', () => {
-  describe.each(['default', 'stylish', 'plain'])('%s', (format) => {
+  describe.each(['default', 'stylish', 'plain', 'json'])('%s', (format) => {
     const expectedName = `expected-${format === 'default' ? 'stylish' : format}.txt`
     const expected = readFile(`nested/${expectedName}`)
 
