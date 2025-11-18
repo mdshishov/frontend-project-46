@@ -53,3 +53,23 @@ Property 'common.follow' was added with value: false
 Property 'group1.baz' was updated. From 'bas' to 'bars'
 Property 'group2' was removed
 ```
+
+## Сравнение плоских файлов
+**JSON**
+[![asciicast](https://asciinema.org/a/QKLB80KOgSkN2GcAszYXhlDa3.svg)](https://asciinema.org/a/QKLB80KOgSkN2GcAszYXhlDa3)
+
+**YML/YAML**
+[![asciicast](https://asciinema.org/a/6EfNd53IQu9RtbKcgyr7AxerG.svg)](https://asciinema.org/a/6EfNd53IQu9RtbKcgyr7AxerG)
+
+## Рекурсивное сравнение
+[![asciicast](https://asciinema.org/a/uTJiKM17AiL1pNhDwQ8v1g9fY.svg)](https://asciinema.org/a/uTJiKM17AiL1pNhDwQ8v1g9fY)
+
+## Форматирование
+**Stylish (по умолчанию)**
+[![asciicast](https://asciinema.org/a/kmQnYuJPkTcXJ8VHFccsjGDQ5.svg)](https://asciinema.org/a/kmQnYuJPkTcXJ8VHFccsjGDQ5)
+
+**Plain**
+[![asciicast](https://asciinema.org/a/VttDJEthztbg0p99FSTVI2PYI.svg)](https://asciinema.org/a/VttDJEthztbg0p99FSTVI2PYI)
+
+**JSON**
+[![asciicast](https://asciinema.org/a/Vl6Im7LjPJHtIddkuGmgdGeiR.svg)](https://asciinema.org/a/Vl6Im7LjPJHtIddkuGmgdGeiR)
