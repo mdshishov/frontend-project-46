@@ -25,7 +25,7 @@ const formatPlain = (data) => {
     })
   }
 
-  return iter(data).filter(item => item).join('\n')
+  return iter(data).filter(item => Boolean(item)).join('\n')
 }
 
 export default formatPlain
